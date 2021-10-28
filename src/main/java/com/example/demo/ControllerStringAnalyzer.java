@@ -57,4 +57,13 @@ public class ControllerStringAnalyzer {
         return counter;
     }
 
+    @GetMapping("letters/{text}")
+    public int counterLetters(@PathVariable String text) {
+        int counter = 0;
+        for (char c : text.toCharArray()) {
+            counter += Character.isLetter(c) ? 1 : 0;
+        }
+        return counter;
+    }
+
 }

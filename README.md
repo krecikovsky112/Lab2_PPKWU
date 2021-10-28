@@ -28,6 +28,15 @@ localhost:8080/string_analyzer/numbers/{ string to analyze }
 
 localhost:8080/string_analyzer/special_characters/{ string to analyze }
 
+
+-number of letters
+
+localhost:8080/string_analyzer/letters/{ string to analyze }
+
+-number of letters
+
+localhost:8080/string_analyzer/{ text to contain }/{ text that should contain other text }
+
 <h2>Example</h2>
 
 GET request:
