@@ -66,4 +66,10 @@ public class ControllerStringAnalyzer {
         return counter;
     }
 
+    @GetMapping("is_contain/{text1}/{text2}")
+    public boolean isCombinationPresentInString(@PathVariable String text1,
+                                                @PathVariable String text2) {
+        return text2.contains(text1);
+    }
+
 }
