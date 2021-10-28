@@ -27,5 +27,14 @@ public class ControllerStringAnalyzer {
         return counter;
     }
 
+    @GetMapping("white_spaces/{text}")
+    public int counterWhiteSpaces(@PathVariable String text) {
+        int counter = 0;
+        for (char c : text.toCharArray()) {
+            counter += Character.isWhitespace(c) ? 1 : 0;
+        }
+        return counter;
+    }
+
 
 }

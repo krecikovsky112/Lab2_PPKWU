@@ -14,9 +14,9 @@ localhost:8080/string_analyzer/upper_case/{ string to analyze }
 localhost:8080/string_analyzer/lower_case/{ string to analyze }
 
 
--number of spaces
+-number of white spaces
 
-localhost:8080/string_analyzer/spaces/{ string to analyze }
+localhost:8080/string_analyzer/white_spaces/{ string to analyze }
 
 
 -number of numbers
@@ -30,7 +30,9 @@ localhost:8080/string_analyzer/special_characters/{ string to analyze }
 
 <h2>Example</h2>
 
-localhost:8080/string_analyzer/spaces/hello%world
+GET request:
+
+localhost:8080/string_analyzer/spaces/hello world
 
 Answer:
 
