@@ -36,5 +36,14 @@ public class ControllerStringAnalyzer {
         return counter;
     }
 
+    @GetMapping("numbers/{text}")
+    public int counterNumbers(@PathVariable String text) {
+        int counter = 0;
+        for (char c : text.toCharArray()) {
+            counter += Character.isDigit(c) ? 1 : 0;
+        }
+        return counter;
+    }
+
 
 }
