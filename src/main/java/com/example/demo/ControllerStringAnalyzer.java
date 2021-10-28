@@ -17,4 +17,15 @@ public class ControllerStringAnalyzer {
         }
         return counter;
     }
+
+    @GetMapping("lower_case/{text}")
+    public int counterLowerCaseLetters(@PathVariable String text) {
+        int counter = 0;
+        for (char c : text.toCharArray()) {
+            counter += Character.isLowerCase(c) ? 1 : 0;
+        }
+        return counter;
+    }
+
+
 }
