@@ -45,5 +45,16 @@ public class ControllerStringAnalyzer {
         return counter;
     }
 
+    @GetMapping("special_characters/{text}")
+    public int counterSpecialCharacters(@PathVariable String text) {
+        int counter = 0;
+        for (char c : text.toCharArray()) {
+            if(!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')))
+            {
+                counter++;
+            }
+        }
+        return counter;
+    }
 
 }
